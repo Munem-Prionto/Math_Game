@@ -25,7 +25,7 @@ timeDisplay.innerHTML = time;
 
 
 function myFn() {
-    console.log('running')
+   
     if(time > 0) {
         time--;
     } if(time <= 0){
@@ -83,7 +83,7 @@ var question;
 // init life 
 const life = document.querySelector('.life');
 const lifePic = '&#x2764';
-life.innerHTML = `Life left : ${lifePic} ${lifePic} ${lifePic}`;
+life.innerHTML = `${lifePic} ${lifePic} ${lifePic}`;
 
 
 
@@ -135,7 +135,7 @@ const generateNumber = () => {
     ans = opArrayfunc[randomOp](random , random2);
     question = `${random} ${opArrayobj[randomOp].name} ${random2}`;
     number.innerHTML = `${question} = `;
-    console.log(ans);
+  
 }
 
 generateNumber();
@@ -155,7 +155,7 @@ const checking =  () => {
             myTimer = setInterval(myTimer, 1000);
 
             correctAnsArray.push(question);
-            console.log(correctAnsArray)
+            
 
             if(correctAnsArray.length === 20) {lvl += 10; lvlvalue += 1;}
             if(correctAnsArray.length === 10) {lvl += 10; lvlvalue += 1;}
@@ -175,8 +175,8 @@ const checking =  () => {
     }   //checking (wrong ans)
         else {
                lifeV -= 1;
-               if(lifeV === 2) {life.innerHTML = `Life left : ${lifePic} ${lifePic}`;}
-               if(lifeV === 1) {life.innerHTML = `Life left : ${lifePic}`;}
+               if(lifeV === 2) {life.innerHTML = `${lifePic} ${lifePic}`;}
+               if(lifeV === 1) {life.innerHTML = `${lifePic}`;}
                if(lifeV <= 0 ) {
                     container.classList.add('hide');
                     restart.classList.remove('hide');
@@ -190,7 +190,7 @@ const checking =  () => {
                     timeDisplay.innerHTML = time;
                }
             wrongAnsArray.push(question);
-            console.log(wrongAnsArray)
+          
             
             wrongA.currentTime = 0;
             wrongA.play();
