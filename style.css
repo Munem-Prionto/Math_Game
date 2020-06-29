@@ -1,0 +1,221 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+ /*    background-color:  #D5DEFA; */
+    background-color: #A4E96A;
+    width: 100vw;
+    height: 100vh;
+}
+.container {
+    padding-top: 20px;
+    width: 60%;
+    margin: auto;
+}
+nav{
+    color: white;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+}
+nav h1 {
+    font-size: 2.5rem;
+    padding: 20px 0px;
+}
+.flexContainer {
+    
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0px;
+}
+.time {
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    letter-spacing: 2px;
+}
+.highscore {
+    font-size: 1.2rem;
+}
+.game {
+    padding-top:5rem;
+    text-align: center;
+}
+.game .score {
+    font-size: 1.5rem;
+}
+.game .math {
+    font-size: 4rem;
+    padding: 0px 1rem;
+}
+.life{
+    font-size: 1.8rem;
+}
+.formFlex {
+    justify-content: center;
+    display: flex;
+    padding: 20px 0px;
+}
+.form input[type=number] {
+    width: 10rem;
+    font-size: 2.5rem;
+    padding: 0px 10px;
+
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.status {
+    font-size: 2rem;
+}
+.incorrect { color: red; transform: scale(.5);}
+.correct {color: green; transform: scale(0.62);}
+
+button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: #333;
+    
+}
+button:focus {
+    outline: none;
+}
+button:hover,
+button:active {
+    cursor: pointer;
+    background-color: rgba(51, 51, 51, 0.89);
+}
+button:active {
+    transform: scale(0.95);
+}
+
+.start {
+   
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+#start-btn {
+    font-size: 2rem;
+} 
+.result-container {
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    width: 100%;;
+    height: 50vh;
+}
+.result {
+    text-align: center;
+}
+.result .heading-game-over{
+    font-size: 3rem;
+    font-weight: bold;
+    color: red;
+    padding: 1rem 0rem;
+}
+.result .final-score {
+    font-size: 2rem;
+}
+ .correct-ans-div{
+     padding: .5rem;
+    font-size: 1.5rem;
+}
+.result-hS {
+    padding: 1rem 0px;
+    font-size: 1.3rem;
+}
+.wrong-q {
+    color: red;
+    padding: .2rem;
+}
+.correct-f {
+    color: black;
+}
+.iA {
+    padding: .6rem;
+}
+#restart-btn {
+    font-size: 1rem ;
+}
+.finalLvl{
+    font-size: 1.3rem;
+}
+@media only screen and (max-width: 660px) {
+    body {
+        overflow-x: hidden;
+    }
+    :root {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 420px) {
+    body {
+        overflow-x: hidden;
+    }
+    :root {
+        font-size: 12px;
+    }
+    .container {
+        width: 90%;
+    }
+    .game .math {
+        font-size: 3rem;
+        padding: 0px 1rem;
+    }
+}
+@media only screen and (max-width : 300px) {
+    body {
+        overflow-x: hidden;
+    }
+    .flexContainer {
+        flex-direction: column;
+    }
+    .game {
+        padding-top:5rem;
+        text-align: start;
+    }
+    .game .math {
+        font-size: 3rem;
+        padding: 0px 0px;
+
+    }
+    .form {
+        justify-content: start;
+        display: flex;
+        padding: 20px 0px;
+    }
+}
+.hide {
+    display: none;
+}

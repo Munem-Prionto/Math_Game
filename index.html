@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math_Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <nav>
+        <h1>Math_Game</h1>
+    </nav>
+    <div class="container hide">
+        <section class="stats">
+            <div class="flexContainer">
+                <div class="life">Life left : </div>
+                <div class="lvl">Level : <span class="lvlValue">1</span></div>
+            </div>
+            <div class="highscore">Personal Best: 0</div>
+        
+        </section>
+        
+        <section class="game" >
+            <div class="time">Time : <span class="timeValue"></span> Sec</div>
+            <div class="score"></div>
+            <form class="form">
+                <div class="formFlex">
+                    <div class="math"> </div>
+                    <input type="number" id="input">
+                </div>
+                
+                
+
+            </form>
+            <div class="status"></div>
+            <button id="btn">SUBMIT</button>
+            
+            
+        </section>
+    </div>
+    <div class="start">
+        <button id="start-btn">START</button>
+    </div>
+    <div class="result-container hide">
+        <div class="result">
+            <p class="heading-game-over">GAME OVER</p>
+            <p class="emoji"></p>
+
+            <p class="final-score">Score : <span class="final-score-value">1</span></p>
+            <div class="highscore result-hS">Personal Best: 0</div>
+            <div class="finalLvl"></div>
+            <button id="restart-btn">RESTART</button>
+<!--             <div class="correct-ans-div">
+                <p class="iA">Incorrect Answers</p>
+                <p class="wrong-q">5+5 = <span class="correct-f">2</span></p>
+                <p class="wrong-q">5+5 = <span class="correct-f">2</span></p>
+                <p class="wrong-q">5+5 = <span class="correct-f">2</span></p>
+            </div> -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
