@@ -174,10 +174,15 @@ const checking =  () => {
 
     }   //checking (wrong ans)
         else {
-               lifeV -= 1;
-               if(lifeV === 2) {life.innerHTML = `${lifePic} ${lifePic}`;}
-               if(lifeV === 1) {life.innerHTML = `${lifePic}`;}
-               if(lifeV <= 0 ) {
+               
+                stop();
+                time = 6;
+                myTimer = setInterval(myTimer, 1000);
+
+                lifeV -= 1;
+                if(lifeV === 2) {life.innerHTML = `${lifePic} ${lifePic}`;}
+                if(lifeV === 1) {life.innerHTML = `${lifePic}`;}
+                if(lifeV <= 0 ) {
                     container.classList.add('hide');
                     restart.classList.remove('hide');
                     //ENDGAME HIGHSCORE
